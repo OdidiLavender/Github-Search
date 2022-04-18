@@ -16,8 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SearchpageComponent,
     UserDetailsComponent,
+    SearchpageComponent,
     
   ],
   imports: [
@@ -25,7 +25,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    // details
+   
+
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
