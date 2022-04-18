@@ -10,6 +10,7 @@ import { GithubService } from 'src/app/services/github.service';
 export class UserDetailsComponent implements OnInit {
   username! : string;
   userDetail : any;
+  repos : any;
   constructor(private active : ActivatedRoute ,
               private githubService:GithubService , 
               private router : Router) { }
@@ -35,10 +36,10 @@ export class UserDetailsComponent implements OnInit {
 
       }
     })
-    // this.githubService.details(this.details).subscribe({
-    //   complete: () => {console.log("succesfully done!")},
-    //   error : () =>
-  
+    this.githubService.getRepo(this.username).subscribe(repos =>{
+      this.repos = repos;
+    })
+    
   }
 
 }
