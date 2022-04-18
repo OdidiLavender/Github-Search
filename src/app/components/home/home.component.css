@@ -1,0 +1,11 @@
+.container{
+    display: grid;
+    place-items: center;
+  
+}
+
+.logo{
+    width: 50%;
+    height: 100%;
+}
+

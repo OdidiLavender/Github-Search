@@ -1,0 +1,18 @@
+<!-- avatar_url -->
+<!-- created_at:
+followers:
+public_repos:
+login: -->
+
+<div class="card mb-3">
+    <img src={{userDetail.avatar_url}} class="card-img-top" alt="..."style="width: 300px;;height:300px;border-radius:50%;">
+    <div class="card-body">
+      <h5 class="card-title">{{userDetail.login}}</h5>
+      <p class="card-text">Repositories:{{userDetail.public_repos}}</p>
+      <p class="card-text">Followers:{{userDetail.followers}}</p>
+      <p class="card-text">Joined {{userDetail.created_at|date}}</p>
+      <p class="card-text">Repositories {{userDetail.Repositories}}</p>
+
+    </div>
+  </div>
+  

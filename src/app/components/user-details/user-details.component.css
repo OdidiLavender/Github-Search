@@ -1,0 +1,404 @@
+nav {
+    background-color: #fff;
+  }
+  
+  .top h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    color: #5f6063;
+    /* color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+    -webkit-transition: color 2s;
+    transition: color 2s; */
+  }
+  
+  /* .top h1:hover {
+    color: #07cff6;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #07cff6;
+  } */
+  .top img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  
+  /* **************************************************** */
+  /* SEARCH INPUT STYLING */
+  /* **************************************************** */
+  .search {
+    position: relative;
+    width: 400px;
+  }
+  
+  .search input {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid grey;
+    color: #202124;
+    background-color: transparent;
+    height: 45px;
+    border-radius: 50px;
+    outline: none;
+  }
+  
+  .searchButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: grey;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .search .search-listing {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background: linear-gradient(90deg,rgba(234,250,254,1) 0,rgba(255,255,255,1) 50%,rgba(234,250,254,1) 100%);
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    z-index: 1100 !important;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  
+  .search .search-listing::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+  }
+  
+  .search .search-listing::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px transparent;
+    border-radius: 50px;
+  }
+  
+  .search .search-listing::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #1472C8;
+  }
+  
+  .search .search-listing .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #5f6063;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  
+  .search .search-listing .list-item:hover {
+    background-color: #f1f1f177;
+  }
+  
+  .search .search-listing .list-item:last-child {
+    border: none !important;
+  }
+  
+  .search .search-listing .list-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 20px 5px 0;
+  }
+  
+  .contData {
+    margin-top: 10%;
+  }
+  
+  /* **************************************************** */
+  /* CARD STYLING */
+  /* **************************************************** */
+  .contData .keyInfoCard {
+    position: fixed;
+    top: 200px;
+    width: 380px;
+    margin: 10px;
+    /* background-image: linear-gradient(45deg, #00C9FF, #12F6D0, #92FE9D); */
+    background-image: linear-gradient(172deg, #2d74a2 20%, #fff 20.4%);
+    border-radius: 10px;
+    box-shadow: 0 30px 40px 5px rgba(0, 0, 0, 0.09);
+    border: none !important;
+    /* background-image: url("/assets/images/cool-background.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center top; */
+  }
+  
+  .keyInfoCard img {
+    position: relative;
+    top: -30px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  /* .keyInfoCard .fa {
+    font-size: 20px;
+    color: #202124;
+  } */
+  .keyInfoCard .bio {
+    word-wrap: break-word;
+    max-width: 300px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #80868b;
+  }
+  
+  .keyInfoCard h5 {
+    text-align: left !important;
+  }
+  
+  .keyInfoCard p {
+    line-height: 10px;
+    color: #3c4043;
+  }
+  
+  .tableCont {
+    margin: auto;
+    overflow-x: hidden;
+  }
+  
+  #livesite {
+    padding: 5px;
+    color: orange;
+    border-radius: 50%;
+  }
+  
+  #plane1 {
+    padding: 5px;
+    color: #05618C;
+    border-radius: 50%;
+  }
+  
+  tbody {
+    border-color: #000;
+    color: #3c4043;
+    /* background-image: linear-gradient(30deg, #00C9FF, #12F6D0, #92FE9D); */
+  }
+  
+  .repo-card {
+    border: none !important;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.09);
+    /* border: 1px solid #2d74a2; */
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 12px;
+  }
+  
+  .repo-card .fa-cookie-bite {
+    color: orange;
+    cursor: pointer;
+  }
+  
+  .repo-card .fa-cookie-bite:hover+.tultip {
+    opacity: 1;
+    transition: all .2s ease;
+  }
+  
+  .repo-card .tultip {
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    color: #5f6063;
+    padding: 5px 10px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .repo-card .repo-name {
+    font-weight: 600;
+    color: #3c4043;
+    letter-spacing: 1px;
+  }
+  
+  .repo-card .repo-name::first-letter {
+    text-transform: uppercase;
+  }
+  
+  .repo-card .desc-div {
+    min-height: 50px;
+  }
+  
+  .repo-card .repo-desc {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #80868b;
+  }
+  
+  .repo-card .repo-date {
+    color: #80868b;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .repo-card .git-btn {
+    background-color: #f1f1f1;
+    color: #5f6063;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+  
+  .repo-card .live-btn {
+    background-color: #2d74a2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+  
+  .repoName {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  .languageBadge {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .stats-holder {
+    width: 100%;
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .user-stats {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .user-stats strong {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+  }
+  
+  .user-stats span {
+    font-size: 26px;
+    color: #5E5E5E;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: pulse 3s infinite;
+  }
+  
+  .user-stats span:hover {
+    animation: none;
+  }
+  
+  /* PULSE Animation */
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44);
+    }
+  
+    70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+  
+    100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.9);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44);
+      box-shadow: 0 0 0 0 rgba(204, 169, 44);
+    }
+  
+    70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+      box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+  
+    100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+      box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+  }
+  
+  /* PULSE Animation END*/
+  @media (max-width:3000px) {}
+  
+  @media (max-width:2000px) {}
+  
+  @media (max-width:1700px) {}
+  
+  @media (max-width:1500px) {}
+  
+  @media (max-width:1350px) {
+    .container-fluid {
+      padding-left: 30px !important;
+      padding-right: 30px !important;
+    }
+  
+    .contData {
+      padding-top: 5vh;
+    }
+  
+    .contData .keyInfoCard {
+      position: fixed;
+      top: 200px;
+      width: 350px;
+    }
+  }
+  
+  @media (max-width:1100px) {}
+  
+  @media (max-width:1020px) {}
+  
+  @media (max-width:760px) {
+    .container-fluid {
+      padding: 20px !important;
+    }
+  
+    .contData {
+      padding-top: 0vh !important;
+    }
+  
+    #profile {
+      margin-top: 25vh;
+    }
+  
+    .repo-header {
+      margin-top: 50px;
+    }
+  
+    .contData .keyInfoCard {
+      position: relative;
+      top: 0px;
+      width: 100%;
+      margin: 0 !important;
+    }
+  
+    .top h1 {
+      font-size: 1.5rem;
+    }
+  
+    .repo-card {
+      margin: 20px 0px !important;
+    }
+  }
